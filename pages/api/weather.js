@@ -4,6 +4,13 @@ export default async function handler(req, res) {
         const query = req.query;
         const { zip, username } = query;
 
+        if (!zip) {
+            res.status(400).json({
+                error: 'Missing ZIP code.'
+            });
+            return;
+        }
+
         // Get Axios
         const axios = require('axios')
 
