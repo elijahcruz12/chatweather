@@ -87,7 +87,7 @@ function Tabs() {
                             <code>
                                 Command: !weather <br />
 
-                                URL: https://example.com/api/weather?zip=12345<br />
+                                URL: {host}/api/weather?zip=12345<br />
                             </code>
                         </p>
                         <p>
