@@ -24,8 +24,8 @@ export default function Navigation() {
                     </div>
                     <div className="ml-10 space-x-4">
                         <a
-                            href="#"
-                            className="inline-block bg-cyan-100 py-2 px-4 border border-transparent rounded-md text-base font-medium text-cyan-600 hover:bg-opacity-75"
+                            href="https://app.netlify.com/start/deploy?repository=https://github.com/elijahcruz12/chatweather"
+                            className="inline-block bg-cyan-100 py-2 px-4 border border-transparent rounded-md text-base font-medium text-cyan-600 hover:bg-opacity-75" target="_blank"
                         >
                             <div className="flex items-center">
                                 <img src="/icons/netlify.svg" alt="netlify" className="w-6 h-6" />
@@ -34,9 +34,8 @@ export default function Navigation() {
                             </div>
                         </a>
                         <a
-                            href="#"
-                            className="inline-block bg-white py-2 px-4 border border-transparent rounded-md text-base font-medium text-gray-600 hover:bg-opacity-75"
-                        >
+                            href="https://github.com/elijahcruz12/chatweather"
+                            className="inline-block bg-white py-2 px-4 border border-transparent rounded-md text-base font-medium text-gray-600 hover:bg-opacity-75" target="_blank">
 
                             <div className="flex items-center">
                                 <img src="/icons/github.svg" alt="github" className="w-6 h-6" />
