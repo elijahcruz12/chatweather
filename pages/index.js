@@ -22,12 +22,15 @@ export default function Home() {
                       <div className="text-center">
                           <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                               <span className="block xl:inline">The Chat App For</span>{' '}
-                              <span className="block text-blue-600 xl:inline">Your <Typing speed={250} loop={true}>
+                              <span className="block text-blue-600 xl:inline">Your <Typing speed={200} loop={true}>
                                   <span className="text-purple-700">Twitch</span>
+                                  <Typing.Delay ms={500} />
                                   <Typing.Backspace count={10} />
                                   <span className="text-red-700">Youtube</span>
+                                  <Typing.Delay ms={500} />
                                 <Typing.Backspace count={10} />
                                   <span className="text-blue-800">Mixer</span>
+                                  <Typing.Delay ms={500} />
                                     <Typing.Backspace count={10} />
                               </Typing> Chat</span>
                           </h1>
