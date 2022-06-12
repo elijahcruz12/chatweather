@@ -47,4 +47,4 @@ The project is a nextJS project, built also using Axios.
 
 ## License
 
-I am using the MIT license. You can find the full license [here]() (MIT).
+I am using the MIT license. You can find the full license [here](https://github.com/elijahcruz12/chatweather/blob/main/license.md) (MIT).
