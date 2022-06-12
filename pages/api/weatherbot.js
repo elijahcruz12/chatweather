@@ -52,11 +52,10 @@ export default async function handler(req, res) {
         const { temp, feels_like} = current;
 
         if(username) {
-            res.status(200).send('It is currently ' + temp + ' degrees Fahrenheit and feels like ' + feels_like + ' degrees Fahrenheit for ' + username + '.',
-            });
+            res.status(200).send('It is currently ' + temp + '° Fahrenheit and feels like ' + feels_like + ' degrees Fahrenheit for ' + username + '.');
         }
         else {
-            res.status(200).send('It is currently ' + temp + ' degrees Fahrenheit and feels like ' + feels_like + ' degrees Fahrenheit.');
+            res.status(200).send('It is currently ' + temp + '° Fahrenheit and feels like ' + feels_like + ' degrees Fahrenheit.');
         }
 
         // Send the data

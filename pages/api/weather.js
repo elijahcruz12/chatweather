@@ -53,12 +53,16 @@ export default async function handler(req, res) {
 
         if(username) {
             res.status(200).json({
-                message: 'It is currently ' + temp + ' degrees Fahrenheit and feels like ' + feels_like + ' degrees Fahrenheit for ' + username + '.',
+                message: 'It is currently ' + temp + '° Fahrenheit and feels like ' + feels_like + ' degrees Fahrenheit for ' + username + '.',
+                temp: temp,
+                feels_like: feels_like
             });
         }
         else {
             res.status(200).json({
-                message: 'It is currently ' + temp + ' degrees Fahrenheit and feels like ' + feels_like + ' degrees Fahrenheit.',
+                message: 'It is currently ' + temp + '° Fahrenheit and feels like ' + feels_like + ' degrees Fahrenheit.',
+                temp: temp,
+                feels_like: feels_like
             });
         }
 
