@@ -28,10 +28,11 @@ You can get an API key for OpenWeatherMap [here](https://openweathermap.org/api)
 
 You can get an API key for TheZipCodes [here](https://thezipcodes.com/api/register).
 
-You'll need to make an .env.local file in the root of the project. From there, you add the API keys to the .env.local file.
+You'll need to make an .env.local file in the root of the project. From there, you add the API keys to the .env.local file. You'll also want to add the HOST variable (Without a trailing slash "/") to the .env.local file.
 
     ZIP_CODES_API_KEY=<your api key>
     OPENWEATHER_API_KEY=<your api key>
+    HOST=http://example.com
 
 TheZipCodes API key is used to get the longitude and latitude for you. This is used to get the weather from OpenWeatherMap.
 
