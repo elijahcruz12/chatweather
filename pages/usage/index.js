@@ -41,7 +41,7 @@ function Tabs() {
 
 
     return (
-        <div>
+        <div className="mx-auto min-w-xl">
             <Tab.Group>
                 <Tab.List className="grid grid-cols-3 bg-gray-50 rounded-lg space-x-2 max-w-lg p-1">
                     <Tab>

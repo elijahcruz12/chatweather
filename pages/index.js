@@ -4,6 +4,7 @@ import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Typing from "react-typing-animation/dist/Typing";
 import YoureHereModal from "../components/YourHereModal";
+import Link from "next/link"
 
 export default function Home() {
 
@@ -39,14 +40,14 @@ export default function Home() {
                               Welcome to Chatweather, a weather chat command for Twitch, Youtube, and Mixer. Used via nightbot or other chat bots, this app will display the current weather for the location of the streamer.
                           </p>
                           <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
-                              <div className="rounded-md shadow">
-                                  <a
-                                      href="/usage"
-                                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                              <Link href="/usage">
+                                  <button
+                                      type="button"
+                                      className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                   >
-                                      Get started
-                                  </a>
-                              </div>
+                                      Get Started
+                                  </button>
+                              </Link>
                               <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
                                   <YoureHereModal />
                               </div>
